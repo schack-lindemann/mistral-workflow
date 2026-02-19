@@ -2401,70 +2401,46 @@ View Chat History with ⌥↩ in the `lechat` keyword. Each result shows the fir
             <string>lechat_history_save</string>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>gpt-5-nano</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>GPT 5 nano</string>
-						<string>gpt-5-nano</string>
-					</array>
-					<array>
-						<string>GPT 5 mini</string>
-						<string>gpt-5-mini</string>
-					</array>
-					<array>
-						<string>GPT 5</string>
-						<string>gpt-5</string>
-					</array>
-					<array>
-						<string>GPT 4.1 nano</string>
-						<string>gpt-4.1-nano</string>
-					</array>
-					<array>
-						<string>GPT 4.1 mini</string>
-						<string>gpt-4.1-mini</string>
-					</array>
-					<array>
-						<string>GPT 4.1</string>
-						<string>gpt-4.1</string>
-					</array>
-					<array>
-						<string>GPT 4o mini</string>
-						<string>gpt-4o-mini</string>
-					</array>
-					<array>
-						<string>GPT 4o</string>
-						<string>gpt-4o</string>
-					</array>
-					<array>
-						<string>o1</string>
-						<string>o1</string>
-					</array>
-					<array>
-						<string>o3</string>
-						<string>o3</string>
-					</array>
-					<array>
-						<string>o3 mini</string>
-						<string>o3-mini</string>
-					</array>
-					<array>
-						<string>o4 mini</string>
-						<string>o4-mini</string>
-					</array>
-				</array>
+            <key>config</key>
+            <dict>
+                <key>default</key>
+                <string>mistral-small-latest</string>
+                <key>pairs</key>
+                <array>
+                    <array>
+                        <string>Mistral Small</string>
+                        <string>mistral-small-latest</string>
+                    </array>
+                    <array>
+                        <string>Mistral Medium</string>
+                        <string>mistral-medium-latest</string>
+                    </array>
+                    <array>
+                        <string>Mistral Large</string>
+                        <string>mistral-large-latest</string>
+                    </array>
+                    <array>
+                        <string>Mistral Tiny</string>
+                        <string>mistral-tiny</string>
+                    </array>
+                    <array>
+                        <string>Mistral Small 2402</string>
+                        <string>mistral-small-2402-v1:latest</string>
+                    </array>
+                    <array>
+                        <string>Mistral Medium 2402</string>
+                        <string>mistral-medium-2402-v1:latest</string>
+                    </array>
+                </array>
 			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Model</string>
+            <key>description</key>
+            <string>Select the Mistral AI model to use for chat completions</string>
+            <key>label</key>
+            <string>Mistral Model</string>
 			<key>type</key>
 			<string>popupbutton</string>
-			<key>variable</key>
-			<string>gpt_model</string>
+            <key>variable</key>
+            <string>mistral_model</string>
 		</dict>
 		<dict>
 			<key>config</key>
