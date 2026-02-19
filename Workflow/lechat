@@ -209,6 +209,14 @@ function run(argv) {
   const streamFile = `${envVar("alfred_workflow_cache")}/stream.txt`
   const streamingNow = envVar("streaming_now") === "1"
 
+  // Check if API key is defined
+  if (!apiKey || apiKey.length === 0) {
+    return JSON.stringify({
+      response: "Mistral API key is not configured. Please set your API key in the workflow configuration.",
+      behaviour: { response: "replacelast" }
+    })
+  }
+
   // If continually reading from a stream, continue that loop
   if (streamingNow) return readStream(streamFile, chatFile, pidStreamFile, timeoutSeconds)
 
