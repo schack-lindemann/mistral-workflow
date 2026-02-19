@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.alfredapp.mistral</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>002874FF-3AE4-4E8F-A4F8-65844E5D6CFB</key>
@@ -587,7 +589,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Schack (forked from alfredapp/openai-workflow)</string>
 	<key>description</key>
 	<string>Mistral AI integrations</string>
 	<key>disabled</key>
@@ -2187,18 +2189,19 @@ View Chat History with ⌥↩ in the `lechat` keyword. Each result shows the fir
 			<key>variable</key>
 			<string>system_prompt</string>
 		</dict>
-
 	</array>
 	<key>variables</key>
 	<dict>
-        <key>lechat_api_endpoint</key>
-        <string>https://api.mistral.ai/v1/chat/completions</string>
+		<key>lechat_api_endpoint</key>
+		<string>https://api.mistral.ai/v1/chat/completions</string>
 		<key>lechat_model_override</key>
 		<string></string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>25.2</string>
+	<string>1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/schack-lindemann/mistral-workflow</string>
 </dict>
 </plist>

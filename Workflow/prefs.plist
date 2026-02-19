@@ -4,5 +4,7 @@
 <dict>
 	<key>mistral_api_key</key>
 	<string>97eY7oUXAMc2HfXISW0P8osSdX7iQLQ7</string>
+	<key>mistral_model</key>
+	<string>mistral-medium-latest</string>
 </dict>
 </plist>
