@@ -2,15 +2,15 @@
 
 ### How do I set up an alternative AI model?
 
-The workflow offers the ability to change the API end points and override model names in the [Workflow Environment Variables](https://www.alfredapp.com/help/workflows/advanced/variables/#environment). This requires advanced configuration and is not something we can provide support for, but [our community are doing it with great success and can help you](https://www.alfredforum.com/topic/21544-using-alternative-and-local-models-with-the-chatgpt-dall-e-workflow/).
+The workflow is now configured for Mistral AI's LeChat. You can change the API endpoints and model names in the [Workflow Environment Variables](https://www.alfredapp.com/help/workflows/advanced/variables/#environment). This requires advanced configuration and is not something we can provide support for, but [our community can help you](https://www.alfredforum.com/topic/21544-using-alternative-and-local-models-with-the-chatgpt-dall-e-workflow/).
 
 ### How do I access the service behind a proxy?
 
 Add a new https_proxy key in [Workflow Environment Variables](https://www.alfredapp.com/help/workflows/advanced/variables/#environment). Or configure the proxy for all workflows under Alfred Preferences → Advanced → Network.
 
-### Why can’t I use the workflow with a ChatGPT Plus subscription?
+### Why can’t I use the workflow with a LeChat Plus subscription?
 
-[The ChatGPT API and ChatGPT Plus subscription are billed separately.](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_e3d911c532)
+[The LeChat API and LeChat Plus subscription are billed separately.](https://docs.mistral.ai/api)
 
 ### How can I reuse pre-made prompts?
 
