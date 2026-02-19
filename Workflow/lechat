@@ -211,8 +211,9 @@ function run(argv) {
 
   // Check if API key is defined
   if (!apiKey || apiKey.length === 0) {
+    console.log("API key is undefined or empty")
     return JSON.stringify({
-      response: "Mistral API key is not configured. Please set your API key in the workflow configuration.",
+      response: "Mistral API key is not configured. Please set your API key in the workflow configuration. Get your API key at: https://console.mistral.ai/api-keys",
       behaviour: { response: "replacelast" }
     })
   }
