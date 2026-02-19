@@ -1031,7 +1031,7 @@ kill "${pid_stream}"
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:chatgpt_history_save}</string>
+                        <string>{var:lechat_history_save}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
@@ -1312,9 +1312,9 @@ function run() {
 				<integer>0</integer>
 				<key>footertext</key>
 				<string>↩ Ask question · ⌘↩ New chat · ⌥↩ Copy last · ⌃↩ Copy all · ⇧↩ Interrupt</string>
-				<key>inputfile</key>
-				<string>chatgpt</string>
-				<key>inputtype</key>
+                <key>inputfile</key>
+                <string>lechat</string>
+                <key>inputtype</key>
 				<integer>1</integer>
 				<key>loadingtext</key>
 				<string>Querying ChatGPT API…</string>
@@ -1462,7 +1462,7 @@ function run() {
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>{var:chatgpt_keyword}</string>
+                        <string>{var:lechat_keyword}</string>
 				<key>skipuniversalaction</key>
 				<true/>
 				<key>subtext</key>
@@ -1698,7 +1698,7 @@ function run() {
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>chatgpt_history_save</key>
+  <key>lechat_history_save</key>
 					<string>1</string>
 					<key>replace_with_chat</key>
 					<string>{query}</string>
@@ -1945,11 +1945,11 @@ function run() {
 
 ### LeChat
 
-Query LeChat via the `chatgpt` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
+Query LeChat via the `lechat` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
 
-![Start LeChat query](images/about/chatgptkeyword.png)
+![Start LeChat query](images/about/lechatkeyword.png)
 
-![Querying LeChat](images/about/chatgpttextview.png)
+![Querying LeChat](images/about/lechattextview.png)
 
 * &lt;kbd&gt;↩&lt;/kbd&gt; Ask a new question.
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Clear and start new chat.
@@ -1959,9 +1959,9 @@ Query LeChat via the `chatgpt` keyword, the [Universal Action](https://www.alfre
 
 #### Chat History
 
-View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the first question as the title and the last as the subtitle.
+View Chat History with ⌥↩ in the `lechat` keyword. Each result shows the first question as the title and the last as the subtitle.
 
-![Viewing chat histories](images/about/chatgpthistory.png)
+![Viewing chat histories](images/about/lechathistory.png)
 
 &lt;kbd&gt;↩&lt;/kbd&gt; to archive the current chat and load the selected one. Older chats can be trashed with the `Delete` [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). Select multiple chats with the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer).</string>
 	<key>uidata</key>
@@ -2363,9 +2363,9 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>default</key>
-				<string>chatgpt</string>
-				<key>placeholder</key>
+                <key>default</key>
+                <string>lechat</string>
+                <key>placeholder</key>
 				<string></string>
 				<key>required</key>
 				<false/>
@@ -2379,7 +2379,7 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>chatgpt_keyword</string>
+            <string>lechat_keyword</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2398,7 +2398,7 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 			<key>type</key>
 			<string>checkbox</string>
 			<key>variable</key>
-			<string>chatgpt_history_save</string>
+            <string>lechat_history_save</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2696,9 +2696,9 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 	</array>
 	<key>variables</key>
 	<dict>
-		<key>chatgpt_api_endpoint</key>
+  <key>lechat_api_endpoint</key>
 		<string>https://api.openai.com/v1/chat/completions</string>
-		<key>chatgpt_model_override</key>
+  <key>lechat_model_override</key>
 		<string></string>
 		<key>dalle_api_endpoint</key>
 		<string>https://api.openai.com/v1/images/generations</string>

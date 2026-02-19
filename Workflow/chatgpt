@@ -199,11 +199,11 @@ function run(argv) {
   const timeoutSeconds = parseInt(envVar("timeout_seconds"))
   const apiKey = envVar("mistral_api_key")
   const apiOrgHeader = [] // Mistral doesn't use organization headers
-  const apiEndpointInit = envVar("chatgpt_api_endpoint") || "https://api.mistral.ai/v1/chat/completions"
+  const apiEndpointInit = envVar("lechat_api_endpoint") || "https://api.mistral.ai/v1/chat/completions"
   const apiEndpointInitHasPath = apiEndpointInit.replace(/^https?:\/\//, "").includes("/")
   const apiEndpoint = apiEndpointInitHasPath ? apiEndpointInit : `${apiEndpointInit}/v1/chat/completions`
   const systemPrompt = envVar("system_prompt")
-  const model = envVar("chatgpt_model_override") ? envVar("chatgpt_model_override") : envVar("mistral_model")
+  const model = envVar("lechat_model_override") ? envVar("lechat_model_override") : envVar("mistral_model")
   const chatFile = `${envVar("alfred_workflow_data")}/chat.json`
   const pidStreamFile = `${envVar("alfred_workflow_cache")}/pid.txt`
   const streamFile = `${envVar("alfred_workflow_cache")}/stream.txt`

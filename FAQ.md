@@ -2,7 +2,7 @@
 
 ### How do I set up an alternative AI model?
 
-The workflow is now configured for Mistral AI's LeChat. You can change the API endpoints and model names in the [Workflow Environment Variables](https://www.alfredapp.com/help/workflows/advanced/variables/#environment). This requires advanced configuration and is not something we can provide support for, but [our community can help you](https://www.alfredforum.com/topic/21544-using-alternative-and-local-models-with-the-chatgpt-dall-e-workflow/).
+The workflow is now configured for Mistral AI's LeChat. You can change the API endpoints and model names in the [Workflow Environment Variables](https://www.alfredapp.com/help/workflows/advanced/variables/#environment). This requires advanced configuration and is not something we can provide support for, but [our community can help you](https://www.alfredforum.com/topic/21544-using-alternative-and-local-models-with-the-lechat-workflow/).
 
 ### How do I access the service behind a proxy?
 
