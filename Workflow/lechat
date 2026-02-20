@@ -179,7 +179,7 @@ function readStream(streamFile, chatFile, pidStreamFile, timeoutSeconds) {
   const footerText = (function() {
     switch (finishReason) {
       case "length": return "Maximum number of tokens reached"
-      case "content_filter": return "Content was omitted due to a flag from OpenAI content filters"
+      case "content_filter": return "Content was omitted due to a flag from Mistral content filters"
     }
   })()
 

@@ -589,7 +589,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Schack (forked from alfredapp/openai-workflow)</string>
+	<string>Schack (forked from alfredapp/mistral-workflow)</string>
 	<key>description</key>
 	<string>Mistral AI integrations</string>
 	<key>disabled</key>
